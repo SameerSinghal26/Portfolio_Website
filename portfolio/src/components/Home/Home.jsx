@@ -11,7 +11,7 @@ function Home() {
     <>
       <div className="col-span-8 row-span-9 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
         <div className="box-1 col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl  py-1 p-8 flex flex-col justify-end">
-          <h1 className="max-w-[37rem] pb-6 font-heading text-[2rem] font-normal leading-snug px-20">
+          <h1 className="max-w-[37rem] pb-6 font-heading text-[2rem] font-normal leading-snug xl:px-20">
             Hi, I'm Sameer Singhal
           </h1>
           <h2 className="max-w-[35rem] pb-8 font-heading text-[1rem] font-normal leading-snug">
