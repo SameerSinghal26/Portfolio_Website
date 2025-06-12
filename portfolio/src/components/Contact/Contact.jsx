@@ -47,7 +47,7 @@ function Contact() {
       <div className="col-span-full bg-bison_hide border-bison_hide rounded-xl p-6 relative w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto">
         <div className="mx-auto mt-1 h-fit">
           <div className="border-2 w-1/2 lg:w-1/3 ml-4 h-10 rounded-full border-[#06141B] bg-bison_hide text-[#06141B] pl-5 font-mono">
-            <strong className="text-2xl font-mono">Contact Me</strong>
+            <strong className="text-xl md:text-2xl lg:text-2xl font-mono">Contact Me</strong>
           </div>
           <div className="border-2 border-[#06141B] w-full mx-auto mt-2 h-fit pt-6 px-4 rounded-2xl bg-bison_hide">
             <p className="text-[#06141B] text-xl mb-6 px-2">
