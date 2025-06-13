@@ -47,12 +47,12 @@ export const projects = [
         content: "A clean and intuitive task manager with features to add, edit, delete, and filter tasks. Fully responsive and uses localStorage for data persistence.",
         technologies: ["HTML", "CSS", "JavaScript"]
     },
-    {
-        title: "Coding Portfolio",
-        link: "https://coding-portfolio-sam.vercel.app/",
-        image: "/coding.png",
-        github: "https://github.com/SameerSinghal26/Coding_Portfolio",
-        content: "A responsive portfolio page showcasing my profiles on LeetCode, GeeksforGeeks, Codeforces, and CodeChef. Built with clean HTML and CSS for fast loading and mobile-friendly design.",
-        technologies: ["HTML", "CSS"]
-    }
+    // {
+    //     title: "Coding Portfolio",
+    //     link: "https://coding-portfolio-sam.vercel.app/",
+    //     image: "/coding.png",
+    //     github: "https://github.com/SameerSinghal26/Coding_Portfolio",
+    //     content: "A responsive portfolio page showcasing my profiles on LeetCode, GeeksforGeeks, Codeforces, and CodeChef. Built with clean HTML and CSS for fast loading and mobile-friendly design.",
+    //     technologies: ["HTML", "CSS"]
+    // }
 ];
