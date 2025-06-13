@@ -40,7 +40,7 @@ function About() {
         </div>
         <div className="box-2 col-span-3 row-span-5 max-lg:col-span-4 max-md:col-span-full bg-armadillo border-armadillo rounded-xl">
           <img
-            src="Profile_picture.png"
+            src="profile_picture.png"
             fetchPriority="high"
             decoding="async"
             alt="profile_image"
