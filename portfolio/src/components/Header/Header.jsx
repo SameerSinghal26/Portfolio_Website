@@ -15,7 +15,7 @@ function Header() {
           <div className="overflow-hidden font-heading font-serif text-2xl font-normal">
             <Link to="/" className="flex items-center">
               <h1 className="text-gray-700 text-3xl font-heading font-serif">
-                <img src="/name.png" className="h-16 flex-shrink-0 " alt="Sameer Singhal"/>
+                <img src="/name-removebg.png" className="h-16 flex-shrink-0 " alt="Sameer Singhal"/>
               </h1>
             </Link>
           </div>
