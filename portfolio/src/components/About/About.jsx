@@ -25,34 +25,31 @@ function About() {
   return (
     <>
       <div className="col-span-8 row-span-9 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
-        {/* Box 1: Introduction */}
-        <div className="box-1 col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl py-1 p-8 flex flex-col justify-end">
-          <h1 className="max-w-[37rem] pb-6 font-heading text-[2rem] font-normal leading-snug px-20">
+        <div className="box-1 col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl p-8 flex flex-col justify-end">
+          <h1 className="max-w-[37rem] pb-6 font-heading font-serif text-[2rem] font-normal leading-snug xl:px-20">
             Hi, I'm Sameer Singhal
           </h1>
-          <h2 className="max-w-[35rem] pb-8 font-heading text-[1rem] font-normal leading-snug">
-            <span className="italic text-[1.5rem]">
-              Pre-Final Year CSE Student & Full Stack Developer
-            </span>{" "}
-            Passionate about solving real-world problems through Data Structures, Algorithms, Development, and Competitive Programming. Currently pursuing Computer Science with a focus on building a strong foundation in modern software development and coding excellence.
+          <h2 className="max-w-[35rem] font-heading font-serif text-[1rem] font-normal leading-snug">
+            <span className="italic text-[1.4rem] block mb-4">
+              Pre-Final Year CSE Student & Full Stack Developer{" "}
+            </span>
+            <span className="block mt-4">
+              Passionate about solving real-world problems through Data Structures, Algorithms, Development, and Competitive Programming. Currently pursuing Computer Science with a focus on building a strong foundation in modern software development and coding excellence.
+            </span>
           </h2>
         </div>
-
-        {/* Box 2: Profile Image */}
         <div className="box-2 col-span-3 row-span-5 max-lg:col-span-4 max-md:col-span-full bg-armadillo border-armadillo rounded-xl">
           <img
-            src="Profile_pic.png"
+            src="Profile_picture.png"
             fetchPriority="high"
             decoding="async"
             alt="profile_image"
-            className="w-full object-full xl:p-8 xl:object-cover"
+            className="w-full max-h-full"
           />
         </div>
-
-        {/* Box 3: About Me */}
         <div className="box-3 col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl">
           <div className="flex size-full flex-col justify-between gap-4">
-            <p className="max-w-[30rem] text-[.9rem] p-5 leading-[135%]">
+            <p className="max-w-[30rem] text-[.9rem] p-5 leading-[135%] font-heading font-serif">
               👨‍🎓
               <br />
               About Me 
@@ -67,25 +64,21 @@ function About() {
               <br />
               I thrive on tackling challenging problems and love turning ideas into real-world applications. I'm also enthusiastic about exploring new technologies, continuously learning, and growing as a developer.
               <br />
-              Beyond the code, you'll often find me immersed in music 🎧, enjoying games 🎮, or diving into the latest tech trends.
-              <br />
               Let's connect, code, and collaborate! 🚀
             </p>
           </div>
         </div>
-
-        {/* Box 4: Location & Hobbies */}
         <div className="box-4 col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full bg-armadillo border-armadillo rounded-xl relative overflow-hidden">
           <div className="flex size-full flex-col justify-between gap-4 p-5">
             <div>
-              <h3 className="text-[#e5decd] text-xl font-semibold mb-3">Where I'm From</h3>
-              <p className="text-[#e5decd] text-base">
+              <h3 className="text-[#e5decd] text-xl font-semibold mb-3 font-heading font-serif">Where I'm From</h3>
+              <p className="text-[#e5decd] text-base font-heading font-serif">
                 I'm from India 🇮🇳, a vibrant country with a rich culture and diverse landscapes. I enjoy exploring new places and experiencing different traditions.
               </p>
             </div>
             <div>
-              <h3 className="text-[#e5decd] text-xl font-semibold mb-3">Hobbies</h3>
-              <p className="text-[#e5decd] text-base">
+              <h3 className="text-[#e5decd] text-xl font-semibold mb-3 font-heading font-serif">Hobbies</h3>
+              <p className="text-[#e5decd] text-base font-heading font-serif">
                 Beyond coding, I love immersing myself in music 🎧, enjoying games 🎮, and diving into the latest tech trends. I also enjoy reading and playing outdoor sports.
               </p>
             </div>
@@ -98,7 +91,7 @@ function About() {
         <div className="box-5 col-span-4 row-span-8 max-lg:col-span-full bg-bison_hide border-bison_hide rounded-xl overflow-y-auto">
           <div className="flex h-full flex-col p-6 gap-2">
             <div className="mb-4">
-              <h3 className="font-heading text-xl font-semibold mb-3 text-[#06141B]">Languages</h3>
+              <h3 className="font-heading font-serif text-xl font-semibold mb-3 text-[#06141B]">Languages</h3>
               <div className="flex flex-wrap gap-2">
                 {technicalSkills.filter(skill => skill.category === 'Languages').map(skill => (
                   <span key={skill.name} className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-medium text-[#06141B] bg-armadillo border-[#06141B]">{skill.name}</span>
@@ -106,7 +99,7 @@ function About() {
               </div>
             </div>
             <div className="mb-4">
-              <h3 className="font-heading text-xl font-semibold mb-3 text-[#06141B]">Frameworks & Libraries</h3>
+              <h3 className="font-heading font-serif text-xl font-semibold mb-3 text-[#06141B]">Frameworks & Libraries</h3>
               <div className="flex flex-wrap gap-2">
                 {technicalSkills.filter(skill => skill.category === 'Frameworks').map(skill => (
                   <span key={skill.name} className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-medium text-[#06141B] bg-armadillo border-[#06141B]">{skill.name}</span>
@@ -114,7 +107,7 @@ function About() {
               </div>
             </div>
             <div>
-              <h3 className="font-heading text-xl font-semibold mb-3 text-[#06141B]">Tools & Technologies</h3>
+              <h3 className="font-heading font-serif text-xl font-semibold mb-3 text-[#06141B]">Tools & Technologies</h3>
               <div className="flex flex-wrap gap-2">
                 {technicalSkills.filter(skill => skill.category === 'Tools' || skill.category === 'Technologies' || skill.category === 'Databases' || skill.category === 'Backend as a Service' || skill.category === 'DevOps').map(skill => (
                   <span key={skill.name} className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-medium text-[#06141B] bg-armadillo border-[#06141B]">{skill.name}</span>
@@ -123,15 +116,13 @@ function About() {
             </div>
           </div>
         </div>
-
-        {/* Box 6: Social Links */}
         <div className="box-6 col-span-4 row-span-1 max-lg:col-span-full max-lg:min-h-[5rem] bg-bison_hide border-bison_hide rounded-xl">
           <div className="flex size-full items-center justify-evenly gap-2">
             <a
               href="https://www.linkedin.com/in/sameersinghal26"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 font-heading font-serif"
             >
               LinkedIn
             </a>
@@ -139,7 +130,7 @@ function About() {
               href="https://github.com/SameerSinghal26"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 font-heading font-serif"
             >
               Github
             </a>
@@ -147,7 +138,7 @@ function About() {
               href="https://x.com/SameerS73068018"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 font-heading font-serif"
             >
               Twitter
             </a>

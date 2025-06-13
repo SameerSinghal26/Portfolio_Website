@@ -12,9 +12,9 @@ function Header() {
     <div className="col-span-full row-span-1 bg-bison_hide border-bison_hide rounded-xl">
       <nav className="flex flex-wrap justify-between items-center px-6 ">
         <div className="flex justify-between items-center w-full lg:w-auto">
-          <div className="overflow-hidden font-heading text-2xl font-normal">
+          <div className="overflow-hidden font-heading font-serif text-2xl font-normal">
             <Link to="/" className="flex items-center">
-              <h1 className="text-gray-700 text-3xl">
+              <h1 className="text-gray-700 text-3xl font-heading font-serif">
                 <img src="/name.png" className="h-16 flex-shrink-0 " alt="Sameer Singhal"/>
               </h1>
             </Link>
@@ -51,7 +51,7 @@ function Header() {
                 to="/"
                 onClick={toggleMenu}
                 className={({ isActive }) =>
-                  `block py-2 px-3 duration-200 text-xl ${
+                  `block py-2 px-3 duration-200 text-xl font-heading font-serif ${
                     isActive ? "text-[#06141B]" : "text-gray-500"
                   } hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0`
                 }
@@ -64,7 +64,7 @@ function Header() {
                 to="/about"
                 onClick={toggleMenu}
                 className={({ isActive }) =>
-                  `block py-2 px-3 duration-200 text-xl ${
+                  `block py-2 px-3 duration-200 text-xl font-heading font-serif ${
                     isActive ? "text-[#06141B]" : "text-gray-500"
                   } hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0`
                 }
@@ -77,7 +77,7 @@ function Header() {
                 to="/contact"
                 onClick={toggleMenu}
                 className={({ isActive }) =>
-                  `block py-2 px-3 duration-200 text-xl ${
+                  `block py-2 px-3 duration-200 text-xl font-heading font-serif ${
                     isActive ? "text-[#06141B]" : "text-gray-500"
                   } hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0`
                 }
@@ -90,7 +90,7 @@ function Header() {
                 to="/project"
                 onClick={toggleMenu}
                 className={({ isActive }) =>
-                  `block py-2 px-3 duration-200 text-xl ${
+                  `block py-2 px-3 duration-200 text-xl font-heading font-serif ${
                     isActive ? "text-[#06141B]" : "text-gray-500"
                   } hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0`
                 }
@@ -100,7 +100,7 @@ function Header() {
             </li>
             <li>
               <button>
-                <a className="block duration-200 text-xl text-gray-500" href="https://docs.google.com/document/d/1XWMm8B9InjAUFbICr9V46-uK9LqoPYAAA1uwhlEyOM0/edit?tab=t.0" target="_blank" onClick={toggleMenu}>Resume</a>
+                <a className="block duration-200 text-xl text-gray-500 font-heading font-serif mb-4 lg:mb-0" href="https://docs.google.com/document/d/1XWMm8B9InjAUFbICr9V46-uK9LqoPYAAA1uwhlEyOM0/edit?tab=t.0" target="_blank" onClick={toggleMenu}>Resume</a>
               </button>
             </li>
           </ul>

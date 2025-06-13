@@ -46,48 +46,48 @@ function Contact() {
     <div className="col-span-12 row-span-9 flex justify-center items-center max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
       <div className="col-span-full bg-bison_hide border-bison_hide rounded-xl p-6 relative w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto">
         <div className="mx-auto mt-1 h-fit">
-          <div className="border-2 w-1/2 lg:w-1/3 ml-4 h-10 rounded-full border-[#06141B] bg-bison_hide text-[#06141B] pl-5 font-mono">
-            <strong className="text-xl md:text-2xl lg:text-2xl font-mono">Contact Me</strong>
+          <div className="border-2 w-1/2 lg:w-1/3 ml-4 h-10 rounded-full border-[#06141B] bg-bison_hide text-[#06141B] pl-5 font-heading font-serif">
+            <strong className="text-xl md:text-2xl lg:text-2xl font-heading font-serif">Contact Me</strong>
           </div>
           <div className="border-2 border-[#06141B] w-full mx-auto mt-2 h-fit pt-6 px-4 rounded-2xl bg-bison_hide">
-            <p className="text-[#06141B] text-xl mb-6 px-2">
+            <p className="text-[#06141B] text-xl mb-6 px-2 font-heading font-serif">
               You can contact me through completing this form
             </p>
             <form ref={form} onSubmit={sendEmail}>
-              <label htmlFor="name" className="mx-2 text-3xl lg:text-2xl font-mono text-[#06141B]">Name :</label>
+              <label htmlFor="name" className="mx-2 text-3xl lg:text-2xl font-heading font-serif text-[#06141B]">Name :</label>
               <br />
               <input 
                 id="name" 
                 placeholder="name" 
-                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-mono rounded-xl w-10/11 lg:w-1/2" 
+                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2" 
                 type="text" 
                 name="user_name"
                 required
               />
               <br />
-              <label htmlFor="email" className="mx-2 text-3xl lg:text-2xl font-mono text-[#06141B]">Email :</label>
+              <label htmlFor="email" className="mx-2 text-3xl lg:text-2xl font-heading font-serif text-[#06141B]">Email :</label>
               <br />
               <input 
                 id="email" 
                 placeholder="email" 
-                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-mono rounded-xl w-10/11 lg:w-1/2" 
+                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2" 
                 type="email" 
                 name="user_email"
                 required
               />
               <br />
-              <label htmlFor="message" className="mx-2 text-3xl lg:text-2xl font-mono text-[#06141B]">Message :</label>
+              <label htmlFor="message" className="mx-2 text-3xl lg:text-2xl font-heading font-serif text-[#06141B]">Message :</label>
               <br />
               <textarea 
                 id="message" 
                 placeholder="type something..." 
-                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-mono rounded-xl w-10/11 lg:w-1/2 h-32 resize-none" 
+                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2 h-32 resize-none" 
                 name="message"
                 required
               />
               <br />
               <button 
-                className={`bg-armadillo text-[#e5decd] w-40 h-12 rounded-xl text-2xl text-center font-mono mx-2 mb-4 transition-colors duration-300 ${
+                className={`bg-armadillo text-[#e5decd] w-40 h-12 rounded-xl text-2xl text-center font-heading font-serif mx-2 mb-4 transition-colors duration-300 ${
                   isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:cursor-pointer hover:bg-soya_bean'
                 }`}
                 type="submit"

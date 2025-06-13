@@ -11,7 +11,7 @@ function Project() {
         >
           {/* Card header - Fixed at top */}
           <div className="flex items-center justify-between px-6 sticky top-0 bg-inherit z-10">
-            <div className="leading-none font-semibold text-xl">{project.title}</div>
+            <div className="leading-none font-heading font-serif text-xl">{project.title}</div>
             <div className="flex gap-2">
               {/* GitHub Button */}
               <a
@@ -44,7 +44,7 @@ function Project() {
           
           {/* Scrollable content */}
           <div className="flex-1 overflow-y-auto no-scrollbar">
-            <div className='font-semibold px-7'>
+            <div className='font-heading font-serif px-7'>
               {project.content}
             </div>
             {/* Card content (image) */}
@@ -67,7 +67,7 @@ function Project() {
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className={`${idx % 2 === 1 ? " border-bison_hide" : " border-armadillo"} inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground`}
+                  className={`${idx % 2 === 1 ? " border-bison_hide" : " border-armadillo"} inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-heading font-serif w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground`}
                 >
                   {tech}
                 </span>

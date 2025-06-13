@@ -10,30 +10,31 @@ function Home() {
   return (
     <>
       <div className="col-span-8 row-span-9 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
-        <div className="box-1 col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl  py-1 p-8 flex flex-col justify-end">
-          <h1 className="max-w-[37rem] pb-6 font-heading text-[2rem] font-normal leading-snug xl:px-20">
+        <div className="box-1 col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl p-8 flex flex-col justify-end">
+          <h1 className="max-w-[37rem] pb-6 font-heading font-serif text-[2rem] font-normal leading-snug xl:px-20">
             Hi, I'm Sameer Singhal
           </h1>
-          <h2 className="max-w-[35rem] pb-8 font-heading text-[1rem] font-normal leading-snug">
-            <span className="italic text-[1.5rem]">
-              {" "}
+          <h2 className="max-w-[35rem] font-heading font-serif text-[1rem] font-normal leading-snug">
+            <span className="italic text-[1.4rem] block mb-4">
               Pre-Final Year CSE Student & Full Stack Developer{" "}
-            </span>{" "}
-            Passionate about solving real-world problems through Data Structures, Algorithms, Development, and Competitive Programming. Currently pursuing Computer Science with a focus on building a strong foundation in modern software development and coding excellence.
+            </span>
+            <span className="block mt-4">
+              Passionate about solving real-world problems through Data Structures, Algorithms, Development, and Competitive Programming. Currently pursuing Computer Science with a focus on building a strong foundation in modern software development and coding excellence.
+            </span>
           </h2>
         </div>
         <div className="box-2 col-span-3 row-span-5 max-lg:col-span-4 max-md:col-span-full bg-armadillo border-armadillo rounded-xl">
           <img
-            src="Profile_pic.png"
+            src="Profile_picture.png"
             fetchPriority="high"
             decoding="async"
             alt="profile_image"
-            className="w-full  object-full xl:p-8 xl:object-cover"
+            className="w-full max-h-full"
           />
         </div>
         <div className="box-3 col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl">
           <div className="flex size-full flex-col justify-between gap-4">
-            <p className="max-w-[30rem] text-[.9rem] p-5 leading-[135%]">
+            <p className="max-w-[30rem] text-[.9rem] p-5 leading-[135%] font-heading font-serif">
               👨‍🎓
               <br />
               About Me 
@@ -44,19 +45,19 @@ function Home() {
               <br />
               Currently, I'm in my 2nd year of studies.
               <br />
-              Over the past few months, I’ve been building a strong foundation in Data Structures, Algorithms, and Full Stack Web Development.
+              Over the past few months, I've been building a strong foundation in Data Structures, Algorithms, and Full Stack Web Development.
               <br />
               I thrive on tackling challenging problems and love turning ideas into real-world applications. I'm also enthusiastic about exploring new technologies, continuously learning, and growing as a developer.
               <br />
-              Beyond the code, you’ll often find me immersed in music 🎧, enjoying games 🎮, or diving into the latest tech trends.
+              Beyond the code, you'll often find me immersed in music 🎧, enjoying games 🎮, or diving into the latest tech trends.
               <br />
-              Let’s connect, code, and collaborate! 🚀
+              Let's connect, code, and collaborate! 🚀
             </p>
           </div>
         </div>
         <div className="box-4 col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full bg-armadillo border-armadillo rounded-xl relative overflow-hidden">
           {/* Top left text */}
-          <span className="absolute top-4 left-4 text-[#e5decd] text-base">Have some<br />questions?</span>
+          <span className="absolute top-4 left-4 text-[#e5decd] text-base font-heading font-serif">Have some<br />questions?</span>
           {/* Top right arrow */}
           <span className="absolute top-4 right-4">
             <NavLink
@@ -131,7 +132,7 @@ function Home() {
               href="https://www.linkedin.com/in/sameersinghal26"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 font-heading font-serif"
             >
               LinkedIn
             </a>
@@ -139,7 +140,7 @@ function Home() {
               href="https://github.com/SameerSinghal26"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 font-heading font-serif"
             >
               Github
             </a>
@@ -147,7 +148,7 @@ function Home() {
               href="https://x.com/SameerS73068018"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              className="flex overflow-hidden text-xl font-medium leading-[100%] text-gray-500 hover:text-[#06141B] hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 font-heading font-serif"
             >
               Twitter
             </a>
