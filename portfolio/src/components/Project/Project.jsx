@@ -3,7 +3,7 @@ import { projects } from "../Project";
 
 function Project() {
   return (
-    <div className="col-span-12 row-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full h-full">
+    <div className="col-span-12 row-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-full h-full">
       {projects.map((project, idx) => (
         <div
           key={project.title}
