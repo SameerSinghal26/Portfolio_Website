@@ -1,5 +1,13 @@
 export const projects = [
     {
+        title: "Stream Hub",
+        link: "https://streamhub-sam.vercel.app/",
+        image: "/StreamHub.png",
+        github: "https://github.com/SameerSinghal26/StreamHub",
+        content: "A full-stack platform where you can stream live video, chat with viewers, and manage sessions—all in a modern, responsive web app.",
+        technologies: ["Next.js", "MongoDB", "Prisma", "Clerk", "LiveKit", "Tailwind CSS", "Uploadthing", "Node.js", "Shadcn", "Ngrok", "OBS Studio"]
+    },
+    {
       title: "Video Hub",
       link: "https://videohub-sam.vercel.app/",
       image: "/VideoHub.png",

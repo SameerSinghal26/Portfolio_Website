@@ -100,7 +100,7 @@ function Header() {
             </li>
             <li>
               <button>
-                <a className="block duration-200 text-xl text-gray-500 font-heading font-serif mb-4 lg:mb-0" href="https://docs.google.com/document/d/1XWMm8B9InjAUFbICr9V46-uK9LqoPYAAA1uwhlEyOM0/edit?tab=t.0" target="_blank" onClick={toggleMenu}>Resume</a>
+                <a className="block duration-200 text-xl text-gray-500 font-heading font-serif mb-4 lg:mb-0" href="https://drive.google.com/file/d/1XrmlQ-ziZamm1jv6NxX9Jo8HMjQIvDDM/view" target="_blank" onClick={toggleMenu}>Resume</a>
               </button>
             </li>
           </ul>
