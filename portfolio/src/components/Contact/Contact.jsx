@@ -58,7 +58,7 @@ function Contact() {
               <br />
               <input 
                 id="name" 
-                placeholder="name" 
+                placeholder="Sameer Singhal" 
                 className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2" 
                 type="text" 
                 name="user_name"
@@ -69,8 +69,8 @@ function Contact() {
               <br />
               <input 
                 id="email" 
-                placeholder="email" 
-                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2" 
+                placeholder="sameersinghal2694@gmail.com" 
+                className="w-full lg:w-3/4 border-[#06141B] bg-bison_hide text-[#06141B] mx-1 lg:mx-2 mb-5 p-1 lg:p-2 text-lg xl:text-2xl font-heading font-serif rounded-xl" 
                 type="email" 
                 name="user_email"
                 required
@@ -80,8 +80,9 @@ function Contact() {
               <br />
               <textarea 
                 id="message" 
-                placeholder="type something..." 
-                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2 h-32 resize-none" 
+                placeholder="Hi..." 
+                className="border-[#06141B] bg-bison_hide text-[#06141B] mx-2 mb-5 p-2 text-xl xl:text-2xl font-heading font-serif rounded-xl w-10/11 lg:w-1/2 resize-none" 
+                style={{ overflow: 'hidden' }}
                 name="message"
                 required
               />
