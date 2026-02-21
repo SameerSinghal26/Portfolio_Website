@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { projects } from "../../components/Project.js";
 import { NavLink } from "react-router-dom";
 
-
-
 function Home() {
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -11,15 +9,20 @@ function Home() {
     <>
       <div className="col-span-8 row-span-9 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
         <div className="box-1 col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl p-8 flex flex-col justify-end">
-          <h1 className="max-w-[37rem] pb-6 font-heading font-serif text-[2rem] font-normal leading-snug xl:px-20">
+          <h1 className="max-w-[37rem] pb-4 font-heading font-serif text-[2rem] font-normal leading-snug xl:px-20">
             Hi, I'm Sameer Singhal
           </h1>
           <h2 className="max-w-[35rem] font-heading font-serif text-[1rem] font-normal leading-snug">
             <span className="italic text-[1.4rem] block mb-4">
-              Pre-Final Year CSE Student & Full Stack Developer{" "}
+              Final Year Computer Science Engineering Student & Full Stack
+              Developer{" "}
             </span>
             <span className="block mt-4">
-              Passionate about solving real-world problems through Data Structures, Algorithms, Development, and Competitive Programming. Currently pursuing Computer Science with a focus on building a strong foundation in modern software development and coding excellence.
+              Passionate about building scalable web applications and solving
+              real-world problems using Data Structures, Algorithms, and modern
+              web technologies. I specialize in the MERN stack and Next.js, with
+              hands-on experience in building secure, production-ready
+              applications.
             </span>
           </h2>
         </div>
@@ -34,39 +37,60 @@ function Home() {
         </div>
         <div className="box-3 col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full bg-bison_hide border-bison_hide rounded-xl">
           <div className="flex size-full flex-col justify-between gap-4">
-            <p className="max-w-[30rem] text-[.9rem] p-5 leading-[135%] font-heading font-serif">
-              👨‍🎓
+            <p className="max-w-[30rem] text-[.8rem] p-6 leading-[135%] font-heading font-serif">
+              👨‍💻
               <br />
-              About Me 
+              About Me
               <br />
-              I'm currently in my pre-final year of Computer Science Engineering,
+              Hey! I'm Sameer, a final year CSE student who genuinely enjoys
+              building things with code.
               <br />
-              driven by a deep passion for programming and problem-solving.
+              I like figuring out how things work, breaking them, and rebuilding
+              them better.
               <br />
-              Currently, I'm in my 2nd year of studies.
+              Most of my time goes into full stack development, solving DSA
+              problems,
               <br />
-              Over the past few months, I've been building a strong foundation in Data Structures, Algorithms, and Full Stack Web Development.
+              and experimenting with new tech.
               <br />
-              I thrive on tackling challenging problems and love turning ideas into real-world applications. I'm also enthusiastic about exploring new technologies, continuously learning, and growing as a developer.
+              I enjoy turning random ideas into real projects and pushing myself
+              to improve every day.
               <br />
-              Beyond the code, you'll often find me immersed in music 🎧, enjoying games 🎮, or diving into the latest tech trends.
+              Outside of coding, you'll probably find me playing console games
+              🎮,
               <br />
-              Let's connect, code, and collaborate! 🚀
+              planning my next trip ✈️, or trying out new food places 🍜.
+              <br />
+              I believe growth comes from curiosity — whether it's tech, travel,
+              or life.
+              <br />
+              Always learning, always building. 🚀
             </p>
           </div>
         </div>
         <div className="box-4 col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full bg-armadillo border-armadillo rounded-xl relative overflow-hidden">
           {/* Top left text */}
-          <span className="absolute top-4 left-4 text-[#e5decd] text-base font-heading font-serif">Have some<br />questions?</span>
+          <span className="absolute top-4 left-4 text-[#e5decd] text-base font-heading font-serif">
+            Have some
+            <br />
+            questions?
+          </span>
           {/* Top right arrow */}
           <span className="absolute top-4 right-4">
-            <NavLink
-              to='/contact'
-            >
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e5decd" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
+            <NavLink to="/contact">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#e5decd"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
             </NavLink>
           </span>
           {/* Bottom left Contact me */}
